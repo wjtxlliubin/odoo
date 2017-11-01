@@ -59,9 +59,11 @@
 
     <!--record 规则 -->
     <record id="rule_user_qingjia_qingjiadan" model="ir.rule">
-      <field name="name">编辑</field>
+      <field name="name">自己编辑自己的请假单</field>
       <field name="model_id" ref="model_qingjia_qingjiadan" />
       <field name="domain_force">[('create_uid','=',user.id)]</field>
+      <!--<field name="groups" eval="[(4,ref('base.group_user'))]"/>-->
+      <!--<field name="groups" eval="[(4,ref('purchase.group_purchase_manager'))]"/>-->
     </record>
 
   </data>

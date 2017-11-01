@@ -10,7 +10,7 @@
 
       <!-- 工作流活动 -->
       <record id="activity_draft" model="workflow.activity">
-          <field name="name">拟稿</field>
+          <field name="name">草稿</field>
           <field name="wkf_id" ref="workflow_qingjia_qingjiadan"/>
           <field name="kind">dummy</field>
           <field name="flow_start">True</field>
@@ -22,7 +22,7 @@
           <field name="action">do_confirm()</field>
       </record>
       <record id="activity_complete" model="workflow.activity">
-          <field name="name">完成</field>
+          <field name="name">已完成</field>
           <field name="wkf_id" ref="workflow_qingjia_qingjiadan"/>
           <field name="kind">function</field>
           <field name="action">do_complete()</field>
